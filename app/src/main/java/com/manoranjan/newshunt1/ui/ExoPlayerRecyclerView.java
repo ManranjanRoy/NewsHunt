@@ -35,7 +35,7 @@ import com.google.android.exoplayer2.upstream.DataSource;
 import com.google.android.exoplayer2.upstream.DefaultBandwidthMeter;
 import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory;
 import com.google.android.exoplayer2.util.Util;
-import com.manoranjan.newshunt1.MediaObject;
+import com.manoranjan.newshunt1.Activity.MediaObject;
 import com.manoranjan.newshunt1.R;
 import com.manoranjan.newshunt1.adapter.PlayerViewHolder;
 

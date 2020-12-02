@@ -7,12 +7,11 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.bumptech.glide.RequestManager;
-import com.manoranjan.newshunt1.MediaObject;
+import com.manoranjan.newshunt1.Activity.MediaObject;
 import com.manoranjan.newshunt1.R;
-import com.manoranjan.newshunt1.SingleVideoActivity;
+import com.manoranjan.newshunt1.Activity.SingleVideoActivity;
 import com.manoranjan.newshunt1.StaticDtaa.StaticData;
 
 import androidx.annotation.NonNull;

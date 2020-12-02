@@ -2,7 +2,6 @@ package com.manoranjan.newshunt1.Adaptor;
 
 import android.content.Context;
 import android.content.Intent;
-import android.provider.SyncStateContract;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,7 +15,7 @@ import com.google.android.youtube.player.YouTubeThumbnailLoader;
 import com.google.android.youtube.player.YouTubeThumbnailView;
 import com.manoranjan.newshunt1.Model.NewsListModel;
 import com.manoranjan.newshunt1.R;
-import com.manoranjan.newshunt1.SingleVideoActivity;
+import com.manoranjan.newshunt1.Activity.SingleVideoActivity;
 import com.manoranjan.newshunt1.StaticDtaa.StaticData;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.manoranjan.newshunt1;
+package com.manoranjan.newshunt1.Activity;
 
 import android.os.Bundle;
 
@@ -24,6 +24,7 @@ import com.manoranjan.newshunt1.Model.SellerModel;
 import com.manoranjan.newshunt1.Model.SizeModel;
 import com.manoranjan.newshunt1.Model.SliderItem;
 import com.manoranjan.newshunt1.Model.SubCatagoryModel;
+import com.manoranjan.newshunt1.R;
 import com.manoranjan.newshunt1.StaticData.CatagoryList;
 import com.manoranjan.newshunt1.StaticDtaa.StaticData;
 import com.manoranjan.newshunt1.fragment.CatagoriesFragment;
@@ -126,9 +127,9 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 break;
 
             case R.id.navigation_notifications:
-               /* fragment = new CatagoriesFragment();
+                fragment = new CatagoriesFragment();
                 CatagoryList.fragment=fragment;
-                break;*/
+                break;
 
           /*  case R.id.navigation_more:
                 fragment = new MoreFragment();

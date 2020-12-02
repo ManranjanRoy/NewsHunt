@@ -1,4 +1,4 @@
-package com.manoranjan.newshunt1;
+package com.manoranjan.newshunt1.Activity;
 
 public class MediaObject {
   private int uId;

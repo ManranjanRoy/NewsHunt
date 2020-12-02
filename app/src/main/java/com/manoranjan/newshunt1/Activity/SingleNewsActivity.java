@@ -1,4 +1,4 @@
-package com.manoranjan.newshunt1;
+package com.manoranjan.newshunt1.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
@@ -8,6 +8,7 @@ import android.os.Bundle;
 
 import com.manoranjan.newshunt1.Adaptor.BrowseSingleNewsAdaptor;
 import com.manoranjan.newshunt1.Adaptor.ProductByCatAdaptor;
+import com.manoranjan.newshunt1.R;
 import com.manoranjan.newshunt1.StaticData.CatagoryList;
 import com.manoranjan.newshunt1.StaticDtaa.StaticData;
 

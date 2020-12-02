@@ -1,4 +1,4 @@
-package com.manoranjan.newshunt1;
+package com.manoranjan.newshunt1.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,7 @@ import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
+import com.manoranjan.newshunt1.R;
 import com.manoranjan.newshunt1.StaticDtaa.StaticData;
 
 public class SingleVideoActivity extends YouTubeBaseActivity {

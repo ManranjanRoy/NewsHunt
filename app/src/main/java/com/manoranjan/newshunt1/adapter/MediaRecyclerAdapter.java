@@ -5,7 +5,7 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
 import com.bumptech.glide.RequestManager;
-import com.manoranjan.newshunt1.MediaObject;
+import com.manoranjan.newshunt1.Activity.MediaObject;
 import com.manoranjan.newshunt1.R;
 
 import java.util.ArrayList;

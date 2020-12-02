@@ -13,7 +13,7 @@
 
     <item
         android:id="@+id/navigation_notifications"
-        android:icon="@drawable/ic_format_list_bulleted_black_24dp"
+        android:icon="@drawable/ic_baseline_add_24"
         android:title="@string/title_notifications" />
     <item
         android:id="@+id/navigation_account"

@@ -11,8 +11,7 @@ import android.widget.TextView;
 
 import com.manoranjan.newshunt1.Model.NewsListModel;
 import com.manoranjan.newshunt1.R;
-import com.manoranjan.newshunt1.SingleNewsActivity;
-import com.manoranjan.newshunt1.SingleVideoActivity;
+import com.manoranjan.newshunt1.Activity.SingleNewsActivity;
 import com.manoranjan.newshunt1.StaticDtaa.StaticData;
 
 import java.util.List;

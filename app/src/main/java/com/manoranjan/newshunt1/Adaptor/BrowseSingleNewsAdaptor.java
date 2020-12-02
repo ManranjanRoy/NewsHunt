@@ -1,6 +1,5 @@
 package com.manoranjan.newshunt1.Adaptor;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -10,10 +9,10 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.manoranjan.newshunt1.MainActivity;
+import com.manoranjan.newshunt1.Activity.MainActivity;
 import com.manoranjan.newshunt1.Model.NewsListModel;
 import com.manoranjan.newshunt1.R;
-import com.manoranjan.newshunt1.SingleNewsActivity;
+import com.manoranjan.newshunt1.Activity.SingleNewsActivity;
 import com.manoranjan.newshunt1.StaticDtaa.StaticData;
 
 import java.util.List;

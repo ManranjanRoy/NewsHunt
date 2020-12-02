@@ -20,9 +20,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.RequestManager;
 import com.bumptech.glide.request.RequestOptions;
 import com.manoranjan.newshunt1.Adaptor.BrowseVideosslistAdaptor;
-import com.manoranjan.newshunt1.Adaptor.ProductByCatAdaptor;
-import com.manoranjan.newshunt1.MediaObject;
-import com.manoranjan.newshunt1.Model.NewsListModel;
+import com.manoranjan.newshunt1.Activity.MediaObject;
 import com.manoranjan.newshunt1.R;
 import com.manoranjan.newshunt1.StaticData.CatagoryList;
 import com.manoranjan.newshunt1.adapter.MediaRecyclerAdapter;
@@ -30,9 +28,6 @@ import com.manoranjan.newshunt1.ui.ExoPlayerRecyclerView;
 import com.manoranjan.newshunt1.utils.DividerItemDecoration;
 
 import java.util.ArrayList;
-import java.util.List;
-
-import static android.widget.LinearLayout.VERTICAL;
 
 /**
  * A simple {@link Fragment} subclass.
