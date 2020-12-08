@@ -7,7 +7,7 @@ public class Color {
 
     private int color;
 
-    private  boolean isselected;
+    private boolean isselected;
 
     public Color(String id, String product_id, int color) {
         this.id = id;
@@ -15,22 +15,27 @@ public class Color {
         this.color = color;
     }
 
-    public void setId(String id){
-        this.id = id;
-    }
-    public String getId(){
+    public String getId() {
         return this.id;
     }
-    public void setProduct_id(String product_id){
-        this.product_id = product_id;
+
+    public void setId(String id) {
+        this.id = id;
     }
-    public String getProduct_id(){
+
+    public String getProduct_id() {
         return this.product_id;
     }
-    public void setColor(int color){
-        this.color = color;
+
+    public void setProduct_id(String product_id) {
+        this.product_id = product_id;
     }
-    public int getColor(){
+
+    public int getColor() {
         return this.color;
+    }
+
+    public void setColor(int color) {
+        this.color = color;
     }
 }

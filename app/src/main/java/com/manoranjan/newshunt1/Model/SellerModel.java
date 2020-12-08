@@ -1,8 +1,7 @@
 package com.manoranjan.newshunt1.Model;
 
-public class SellerModel
-{
-    String id,name;
+public class SellerModel {
+    String id, name;
     int image;
 
     public SellerModel() {

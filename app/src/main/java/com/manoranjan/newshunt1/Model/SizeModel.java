@@ -1,8 +1,7 @@
 package com.manoranjan.newshunt1.Model;
 
-public class SizeModel
-{
-    String id,name;
+public class SizeModel {
+    String id, name;
     int image;
 
     public SizeModel() {

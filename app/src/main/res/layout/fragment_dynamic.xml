@@ -1,36 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".fragment.DynamicFragment">
-    <RelativeLayout
+    <TextView
         android:visibility="gone"
-        android:id="@+id/r1"
+        android:id="@+id/txtTabItemNumber"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:paddingVertical="5dp"
-            android:paddingLeft="10dp"
-            android:id="@+id/recyclerview1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-    </RelativeLayout>
+        android:layout_height="wrap_content"
+        android:text="More" />
+    <TextView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/c"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="@string/hello_blank_fragment"
+        />
 
     <RelativeLayout
-
-        android:layout_below="@id/r1"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <!-- TODO: Update blank fragment layout -->
-        <TextView
-            android:visibility="gone"
-            android:id="@+id/txtTabItemNumber"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="More" />
+
         <androidx.recyclerview.widget.RecyclerView
             android:background="@color/white"
             android:scrollbars="none"
@@ -43,4 +40,4 @@
 
 
 
-</RelativeLayout>
+</LinearLayout>

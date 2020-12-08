@@ -2,25 +2,18 @@ package com.manoranjan.newshunt1.fragment;
 
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-
-import androidx.core.content.ContextCompat;
-import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.DefaultItemAnimator;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
-
 import android.os.Handler;
 import android.os.Looper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.RequestManager;
 import com.bumptech.glide.request.RequestOptions;
-import com.manoranjan.newshunt1.Adaptor.BrowseVideosslistAdaptor;
 import com.manoranjan.newshunt1.Activity.MediaObject;
+import com.manoranjan.newshunt1.Adaptor.BrowseVideosslistAdaptor;
 import com.manoranjan.newshunt1.R;
 import com.manoranjan.newshunt1.StaticData.CatagoryList;
 import com.manoranjan.newshunt1.adapter.MediaRecyclerAdapter;
@@ -28,6 +21,12 @@ import com.manoranjan.newshunt1.ui.ExoPlayerRecyclerView;
 import com.manoranjan.newshunt1.utils.DividerItemDecoration;
 
 import java.util.ArrayList;
+
+import androidx.core.content.ContextCompat;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -37,9 +36,9 @@ import java.util.ArrayList;
 public class DynamicVideoFragment extends Fragment {
     RecyclerView nrecyclerview;
     BrowseVideosslistAdaptor browseProductslistAdaptor;
-
     ExoPlayerRecyclerView mRecyclerView;
-
+    int val;
+    TextView c;
     private ArrayList<MediaObject> mediaObjectList = new ArrayList<>();
     private MediaRecyclerAdapter mAdapter;
     private boolean firstTime = false;
@@ -47,25 +46,33 @@ public class DynamicVideoFragment extends Fragment {
     public DynamicVideoFragment() {
         // Required empty public constructor
     }
-    public static DynamicVideoFragment newInstance() {
-        return new DynamicVideoFragment();
+
+    public static DynamicVideoFragment addfrag(int val) {
+        DynamicVideoFragment fragment = new DynamicVideoFragment();
+        Bundle args = new Bundle();
+        args.putInt("someInt", val);
+        fragment.setArguments(args);
+        return fragment;
     }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v= inflater.inflate(R.layout.fragment_dynamic_video, container, false);
-
+        View v = inflater.inflate(R.layout.fragment_dynamic_video, container, false);
+        // Toast.makeText(getContext(),"hii",Toast.LENGTH_LONG).show();
         nrecyclerview = v.findViewById(R.id.recyclerviewfproduct);
         nrecyclerview.setHasFixedSize(true);
         nrecyclerview.setLayoutManager(new LinearLayoutManager(getContext()));
+        browseProductslistAdaptor = new BrowseVideosslistAdaptor(getContext(), CatagoryList.newsListModels);
+        nrecyclerview.setAdapter(browseProductslistAdaptor);
+
         initViews(v);
         prepareVideoList();
+
         //set data object
         mRecyclerView.setMediaObjects(mediaObjectList);
-        mAdapter = new MediaRecyclerAdapter(mediaObjectList, initGlide(),getContext());
-
-        //Set Adapter
+        mAdapter = new MediaRecyclerAdapter(mediaObjectList, initGlide(), getContext());
         mRecyclerView.setAdapter(mAdapter);
 
         if (firstTime) {
@@ -96,8 +103,6 @@ public class DynamicVideoFragment extends Fragment {
     private void initViews(View v) {
         /* TextView textView=v.findViewById(R.id.txtTabItemNumber);
         textView.setText(String.valueOf("Category :  "+getArguments().getInt("position")));*/
-        browseProductslistAdaptor = new BrowseVideosslistAdaptor(getContext(), CatagoryList.newsListModels);
-        nrecyclerview.setAdapter(browseProductslistAdaptor);
 
         mRecyclerView = v.findViewById(R.id.exoPlayerRecyclerView);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.VERTICAL, false));
@@ -114,12 +119,14 @@ public class DynamicVideoFragment extends Fragment {
         }
         super.onDestroy();
     }
+
     private RequestManager initGlide() {
         RequestOptions options = new RequestOptions();
 
         return Glide.with(this)
                 .setDefaultRequestOptions(options);
     }
+
     private void prepareVideoList() {
         MediaObject mediaObject = new MediaObject();
         mediaObject.setId(1);

@@ -6,22 +6,6 @@
     tools:context=".fragment.DynamicVideoFragment">
 
     <RelativeLayout
-        android:visibility="gone"
-        android:id="@+id/r1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <androidx.recyclerview.widget.RecyclerView
-            android:paddingVertical="5dp"
-            android:paddingLeft="10dp"
-            android:id="@+id/recyclerview1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-    </RelativeLayout>
-
-    <RelativeLayout
-
-        android:layout_below="@id/r1"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <!-- TODO: Update blank fragment layout -->

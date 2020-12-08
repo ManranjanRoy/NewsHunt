@@ -2,7 +2,7 @@ package com.manoranjan.newshunt1.Model;
 
 public class NewsListModel {
 
-    String id,name,desc,pprice,oprice,discount,wishlist;
+    String id, name, desc, pprice, oprice, discount, wishlist, newstype;
     int img;
 
     public NewsListModel() {
@@ -81,5 +81,13 @@ public class NewsListModel {
 
     public void setWishlist(String wishlist) {
         this.wishlist = wishlist;
+    }
+
+    public String getNewstype() {
+        return newstype;
+    }
+
+    public void setNewstype(String newstype) {
+        this.newstype = newstype;
     }
 }

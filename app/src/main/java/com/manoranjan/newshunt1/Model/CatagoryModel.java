@@ -1,8 +1,7 @@
 package com.manoranjan.newshunt1.Model;
 
-public class CatagoryModel
-{
-    String id,name;
+public class CatagoryModel {
+    String id, name;
     int image;
 
     public CatagoryModel() {

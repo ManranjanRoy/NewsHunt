@@ -1,7 +1,6 @@
 package com.manoranjan.newshunt1.Model;
 
-public class item
-{
+public class item {
     String name;
     boolean isselected;
 

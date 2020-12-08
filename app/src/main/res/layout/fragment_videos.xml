@@ -45,15 +45,15 @@
         android:layout_below="@id/r1"
         app:tabTextAppearance="@style/MineCustomTabText"
         app:tabTextColor="@color/hint"
-        android:id="@+id/tabs"
+        android:id="@+id/tabs1"
         app:tabIndicatorColor="@color/bottom_color"
         app:tabSelectedTextColor="@color/bottom_color"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         app:tabMode="scrollable"/>
     <androidx.viewpager.widget.ViewPager
-        android:layout_below="@id/tabs"
-        android:id="@+id/viewpager"
+        android:layout_below="@id/tabs1"
+        android:id="@+id/viewpager1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />

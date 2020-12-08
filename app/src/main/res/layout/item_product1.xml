@@ -122,12 +122,14 @@
 
     </LinearLayout>
     <View
+        android:visibility="gone"
         android:layout_marginHorizontal="10dp"
         android:layout_marginTop="0dp"
         android:background="#4F888888"
         android:layout_width="match_parent"
         android:layout_height="0.5dp"/>
     <LinearLayout
+        android:visibility="gone"
         android:layout_marginHorizontal="10dp"
         android:layout_marginTop="5dp"
         android:layout_weight="4"
