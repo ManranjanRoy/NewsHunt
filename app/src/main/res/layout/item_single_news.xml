@@ -28,7 +28,7 @@
                         android:id="@+id/back"
                         android:padding="5dp"
                         android:layout_marginLeft="10dp"
-                        android:src="@drawable/ic_keyboard_backspace_black_24dp"
+                        app:srcCompat="@drawable/ic_keyboard_backspace_black_24dp"
                         android:layout_width="40dp"
                         android:layout_height="40dp"/>
                 </LinearLayout>

@@ -137,13 +137,12 @@ public class SingleNewsActivity extends AppCompatActivity {
                         coundcown.setText("done!");
                     }
                 }.start();
-
                 cancel.setOnClickListener(new View.OnClickListener() {
 
                     @Override
                     public void onClick(View view) {
                         // TODO Do something
-
+                        releasePlayer();
                         //Dismiss once everything is OK.
                         dialog.dismiss();
                     }

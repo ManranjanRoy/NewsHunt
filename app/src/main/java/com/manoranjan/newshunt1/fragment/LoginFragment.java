@@ -48,7 +48,7 @@ public class LoginFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.fragment_catagories, container, false);
+        View v = inflater.inflate(R.layout.fragment_login, container, false);
         progressDialog = new ProgressDialog(getActivity());
         progressDialog.setMessage("Please Wait ...");
         username = v.findViewById(R.id.edit_usename);

@@ -1,6 +1,7 @@
 package com.manoranjan.newshunt1.fragment;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.Toolbar;
 
 import com.google.android.material.tabs.TabLayout;
+import com.manoranjan.newshunt1.Activity.DashBoardActivity;
 import com.manoranjan.newshunt1.Adaptor.TabAdapter;
 import com.manoranjan.newshunt1.R;
 import com.manoranjan.newshunt1.StaticData.CatagoryList;
@@ -38,6 +40,13 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         v = inflater.inflate(R.layout.fragment_home, container, false);
+
+        v.findViewById(R.id.account).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getContext(), DashBoardActivity.class));
+            }
+        });
         progressDialog = new ProgressDialog(getContext());
         progressDialog.setMessage("Please Wait ...");
         viewPager = v.findViewById(R.id.viewpager);

@@ -11,9 +11,36 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-
-        <activity android:name=".Activity.UploadActivity" android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".Activity.AddVideoActivity"  android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Activity.AddVideoNewsForm" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Activity.MyCommisionActivity"
+            android:label="My Commision"
+            android:parentActivityName=".Activity.DashBoardActivity" />
+        <activity
+            android:name=".Activity.AddAdsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.MyAdsActivity"
+            android:label="My Ads"
+            android:parentActivityName=".Activity.DashBoardActivity" />
+        <activity
+            android:name=".Activity.ReportersNewsActivity"
+            android:label="My News"
+            android:parentActivityName=".Activity.DashBoardActivity" />
+        <activity
+            android:name=".Activity.AddWalletActivity"
+            android:label="Recharge Wallet"
+            android:parentActivityName=".Activity.MyWalletActivity" />
+        <activity
+            android:name=".Activity.MyWalletActivity"
+            android:label="My Wallet"
+            android:parentActivityName=".Activity.DashBoardActivity" />
+        <activity
+            android:name=".Activity.UploadActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.AddVideoActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Activity.AddNewsActivity"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -28,7 +55,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Activity.SingleNewsActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Activity.SingleVideoActivity"
             android:configChanges="orientation|screenSize"
@@ -42,17 +69,18 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
-
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission. ACCESS_COARSE_LOCATION" />
+
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
 </manifest>

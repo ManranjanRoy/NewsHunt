@@ -1,6 +1,7 @@
 package com.manoranjan.newshunt1.fragment;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -9,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Toolbar;
 
 import com.google.android.material.tabs.TabLayout;
+import com.manoranjan.newshunt1.Activity.DashBoardActivity;
 import com.manoranjan.newshunt1.Adaptor.VideoTabAdapter;
 import com.manoranjan.newshunt1.R;
 import com.manoranjan.newshunt1.StaticData.CatagoryList;
@@ -40,7 +42,12 @@ public class VideosFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         v = inflater.inflate(R.layout.fragment_videos, container, false);
-
+        v.findViewById(R.id.account).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getContext(), DashBoardActivity.class));
+            }
+        });
         viewPager = v.findViewById(R.id.viewpager1);
         mTabLayout = v.findViewById(R.id.tabs1);
         progressDialog = new ProgressDialog(getContext());
