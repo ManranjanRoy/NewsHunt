@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    android:background="@android:color/transparent"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp">
+
+   <LinearLayout
+       android:id="@+id/uploadimage"
+       android:foregroundGravity="center"
+       android:layout_gravity="center"
+       android:paddingHorizontal="10dp"
+       android:paddingVertical="5dp"
+
+       android:gravity="center"
+       android:background="@drawable/dialog_border"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <ImageView
+           android:layout_width="40dp"
+           android:layout_height="40dp"
+           app:srcCompat="@drawable/imagered"/>
+       <TextView
+           android:textColor="@color/white"
+           android:paddingLeft="10dp"
+           android:textSize="15dp"
+           android:text="Add Image News"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+   </LinearLayout>
+    <LinearLayout
+        android:id="@+id/uploadvideo"
+        android:foregroundGravity="center"
+        android:layout_gravity="center"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:gravity="center"
+        android:background="@drawable/dialog_border"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/videored"/>
+        <TextView
+            android:id="@+id/a"
+            android:textColor="@color/white"
+            android:paddingLeft="10dp"
+            android:textSize="15dp"
+            android:text="Add Video News"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/cancel_action"
+            android:foregroundGravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/ic_baseline_cancel_24" />
+    </RelativeLayout>
+</LinearLayout>

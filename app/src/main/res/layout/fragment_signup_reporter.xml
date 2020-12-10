@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".fragment.SignupReporterFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp">
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Welcome to Admin"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Login in. Too seeit in action." />
+
+        <EditText
+            android:layout_marginTop="25dp"
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Name"
+            android:inputType="text"
+            android:padding="10dip" />
+        <EditText
+            android:maxLength="10"
+            android:layout_marginTop="10dp"
+            android:id="@+id/edit_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Phone"
+            android:inputType="number"
+            android:padding="10dip" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+            <EditText
+                android:layout_toLeftOf="@id/getotp"
+                android:maxLength="10"
+                android:layout_marginTop="10dp"
+                android:id="@+id/edit_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:hint="Otp"
+                android:inputType="number"
+                android:padding="10dip" />
+            <Button
+                android:layout_marginLeft="10dp"
+                android:id="@+id/getotp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/loginbutton_edittext"
+                android:text="Login"
+                android:layout_width="100dp"
+                android:layout_height="45dp"/>
+        </RelativeLayout>
+
+
+        <EditText
+            android:id="@+id/edit_adharnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Aadhar Number"
+            android:inputType="text"
+            android:padding="10dp" />
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Aadhar Front"/>
+                <ImageView
+                    android:id="@+id/aadharfront"
+                    app:srcCompat="@drawable/ic_baseline_add_24"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Aadhar Back"/>
+                <ImageView
+                    android:id="@+id/aadharback"
+                    app:srcCompat="@drawable/ic_baseline_add_24"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="Country"
+            android:layout_marginBottom="5dp"/>
+        <LinearLayout
+            android:background="@drawable/rounded_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:prompt="@string/app_name"/>
+        </LinearLayout>
+        <TextView
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="State"
+            android:layout_marginBottom="5dp"/>
+        <LinearLayout
+            android:background="@drawable/rounded_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <Spinner
+                android:id="@+id/spinnerstate"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:prompt="@string/app_name"/>
+        </LinearLayout>
+        <TextView
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="District"
+            android:layout_marginBottom="5dp"/>
+        <LinearLayout
+            android:background="@drawable/rounded_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <Spinner
+                android:id="@+id/spinnerDistrict"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:prompt="@string/app_name"/>
+        </LinearLayout>
+        <TextView
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="Block"
+            android:layout_marginBottom="5dp"/>
+        <LinearLayout
+            android:background="@drawable/rounded_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <Spinner
+                android:id="@+id/spinnerBlock"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:prompt="@string/app_name"/>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/edit_pincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Pincode"
+            android:inputType="number"
+            android:maxLength="6"
+            android:padding="10dp" />
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/edit_usename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Username"
+            android:inputType="text"
+            android:padding="10dip" />
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp" />
+        <Button
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/loginbutton_edittext"
+            android:text="Sign up"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"/>
+        <Button
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:background="@drawable/loginbutton_edittext1"
+            android:text="Sign in"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"/>
+        <TextView
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="App dashboard @ 2020"  />
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
