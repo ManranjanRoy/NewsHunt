@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AddVideoNewsForm">
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+            android:layout_width="40dp"
+            android:layout_height="30dp"/>
+        <TextView
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Add Video News"
+            android:textSize="20dp" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_marginTop="56dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:layout_marginBottom="30dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+
+                android:paddingHorizontal="5dp"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp">
+                <TextView
+                    android:visibility="gone"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Add News"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Login in. Too seeit in action." />
+                <TextView
+                    android:visibility="gone"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:text="News Type"
+                    android:layout_marginBottom="5dp"/>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:background="@drawable/rounded_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+                    <Spinner
+                        android:id="@+id/spinnertype"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:prompt="@string/app_name"/>
+                </LinearLayout>
+                <TextView
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:text="Category"
+                    android:layout_marginBottom="5dp"/>
+                <LinearLayout
+                    android:background="@drawable/rounded_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+                    <Spinner
+                        android:id="@+id/spinnercategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:prompt="@string/app_name"/>
+                </LinearLayout>
+                <TextView
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:text="Sub Category"
+                    android:layout_marginBottom="5dp"/>
+                <LinearLayout
+                    android:background="@drawable/rounded_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+                    <Spinner
+                        android:id="@+id/spinnersubcategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:prompt="@string/app_name"/>
+                </LinearLayout>
+                <EditText
+                    android:layout_marginTop="25dp"
+                    android:id="@+id/edit_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="News Title"
+                    android:inputType="text"
+                    android:padding="10dip" />
+                <EditText
+                    android:paddingTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:id="@+id/edit_desc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|left"
+                    android:inputType="textEmailAddress|textMultiLine"
+                    android:lines="20"
+                    android:hint="Description"
+                    android:minLines="5"
+                    android:scrollHorizontally="false"
+                    android:scrollbars="vertical" />.
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/edit_metaname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="Meta Title"
+                    android:inputType="text"
+                    android:padding="10dip" />
+                <EditText
+                    android:paddingTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:id="@+id/edit_metadesc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|left"
+                    android:inputType="textEmailAddress|textMultiLine"
+                    android:lines="20"
+                    android:hint="Meta Description"
+                    android:minLines="5"
+                    android:scrollHorizontally="false"
+                    android:scrollbars="vertical" />
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:weightSum="2"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Image"/>
+                        <ImageView
+                            android:id="@+id/aadharfront"
+                            app:srcCompat="@drawable/image"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Banner Image"/>
+                        <ImageView
+                            android:id="@+id/aadharback"
+                            app:srcCompat="@drawable/image"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:visibility="visible"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dip"
+                        android:text="Country"
+                        android:layout_marginBottom="5dp"/>
+                    <TextView
+                        android:drawableLeft="@drawable/ic_search_black_24dp"
+                        android:textColor="@color/bottom_color"
+                        android:id="@+id/searchlocation"
+                        android:layout_alignParentEnd="true"
+                        android:visibility="visible"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dip"
+                        android:text="Search Location"
+                        android:layout_marginBottom="5dp"/>
+                </RelativeLayout>
+                <LinearLayout
+                    android:visibility="visible"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+                    <TextView
+                        android:gravity="center"
+                        android:hint="Country"
+                        android:id="@+id/spinnercountry"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp" />
+
+                </LinearLayout>
+                <TextView
+                    android:visibility="visible"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:text="State"
+                    android:layout_marginBottom="5dp"/>
+                <LinearLayout
+                    android:visibility="visible"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+                    <TextView
+                        android:gravity="center"
+                        android:hint="State"
+                        android:id="@+id/spinnerstate"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp" />
+                </LinearLayout>
+                <TextView
+                    android:visibility="visible"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:text="District"
+                    android:layout_marginBottom="5dp"/>
+                <LinearLayout
+                    android:visibility="visible"
+                    android:background="@drawable/rounded_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+                    <TextView
+                        android:gravity="center"
+                        android:hint="District"
+                        android:id="@+id/spinnerdistic"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp" />
+                </LinearLayout>
+                <TextView
+                    android:visibility="gone"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:text="Block"
+                    android:layout_marginBottom="5dp"/>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:background="@drawable/rounded_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+                    <TextView
+                        android:gravity="center"
+                        android:hint="Block"
+                        android:id="@+id/spinnerblock"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/save"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/loginbutton_edittext"
+                    android:text="Upload"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"/>
+
+                <TextView
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/compananyname"  />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+    <fragment android:id="@+id/autocomplete_fragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+        />
+</RelativeLayout>
+
